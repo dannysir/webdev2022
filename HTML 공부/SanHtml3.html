@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="discription" content="이런저런 설명" />
+    <meta name="keywords" content="studing" />
+    <meta name="author" content=" SanE" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>공부중</title>
+  </head>
+
+  <body>
+    <style>
+      [data-value*="title"] {
+        color: blue;
+      }
+
+      .collow {
+        background-image: url("https://images.unsplash.com/photo-1547553641-a18afbab3c96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80");
+        background-repeat: round;
+        color: red;
+      }
+
+      h2 {
+        color: darkmagenta;
+      }
+
+      table,
+      th,
+      td,
+      tr {
+        border: solid;
+      }
+    </style>
+    <h6>SanE</h6>
+    <h1>SanE</h1>
+    <p>고오옹 부우우웅우</p>
+    <a href="http:fun-coding.org" target="_blank"> FUN CODING </a>
+
+    <ol>
+      <li>FIRST</li>
+      <li>SECOND</li>
+      <li>THIRD</li>
+    </ol>
+    <ul>
+      <li>one</li>
+      <li>other</li>
+      <li>another</li>
+    </ul>
+
+    <div>div로 쓰면 css 쓰기도 좋다</div>
+
+    <h2>table 만들기 = 표 만들기</h2>
+    <table data-value="tablemaking">
+      <thead>
+        <tr data-value="title">
+          <th>TITLE 1</th>
+          <th>TITLE 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>내용 1</td>
+          <td>내용 2</td>
+        </tr>
+        <tr>
+          <td>내용 3</td>
+          <td>내용 4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>표의 마지막 내용1</td>
+          <td>표의 마지막 내용2</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <br />
+    <br />
+    <h2>colspan과 lowspan</h2>
+
+    <table class="collow">
+      <thead>
+        <tr data-value="title">
+          <th colspan="2">colspan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">rowspan</td>
+          <td>내용 2</td>
+        </tr>
+        <tr>
+          <td>내용 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>표의 마지막 내용1</td>
+          <td>표의 마지막 내용2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h3>Form TEST</h3>
+
+    <form action="login.html" method="point">
+      id : <input type="text" name="id" />
+      password : <input type="text" name "pw" autocomplete="on">
+      <br />
+      button : <input type="button" value="이것은 버튼" />
+      <br />
+
+      여기에 자동으로 포커스 : <input type="text" name="믕" autofocus />
+    </form>
+  </body>
+</html>
