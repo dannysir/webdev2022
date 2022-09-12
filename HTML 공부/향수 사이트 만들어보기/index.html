@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="SanE's perfume recommend">
+    <meta name="keyword" content="perfume, recommend, ingredients">
+    <meta name="author" content="SanE">
+    <meta name="viewport" content="width=device-width, user-scalable = no , initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SanE's Perfume</title>
+
+    <!-- Open Graph (Facebook, Linkedin)-->
+    <meta property="og:type" content="website" />
+    <!-- https://ogp.me/#types -->
+    <meta property="og:title" content="잔재미코딩" />
+    <meta property="og:description" content="잔재미코딩 온라인 강의 리스트" />
+    <meta property="og:image" content="img/fun-coding-mark.png" />
+    <meta property="og:url" content="https://www.fun-coding.org" />
+    <meta property="og:site_name" content="잔재미코딩" />
+
+<!-- fabicon 설정하기 -->
+<link rel="icon" href="img/favicon.ico">
+
+
+<!-- 아이폰용 fabicon-->
+<link rel="apple-touch-icon" href="img/favicon.ico">
+<!-- 인터넷 익스플로어용 fabicon-->
+<link rel="short icon" type="image/x-icon" href="img/favicon.ico">
+
+ <!-- CSS Reset(1) (리셋은 가장 먼저 해줘야함 / 나중에 쓰면 설정해둔거 다 날아감 )-->
+ <link rel="stylesheet" href="css/nomalize.css" />
+ <!-- https://fontawesome.com/start -->
+ <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
+ <!-- Spoca Han Sans Neo (폰트 가져오기)-->
+ <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+
+ <!-- CSS 불러오기-->
+ <link rel="stylesheet" href="css/style.css" />
+
+ 
+</head>
+
+<body>
+<header>
+<div class="%">
+    <div class="head-container">
+        <div class="head-title"><a href="https://www.fragrantica.com" target = "_blank">PERFUME </a>></div>
+        <div class="head-recommend"><a href="https://noseparis.com" target="_blank">Perfume recommend</a></div>
+    </div>
+</div>
+</header>
+
+
+<section class="main">
+        <div class="main-container">
+            <div class="inner">
+                <div class="title-container">
+                  <div class="title-message">FIND!</div>
+                  <div class="message">your perfume</div>
+                 <!-- <input type="text" autocorrect="off" autocapitalize="none" spellcheck="false" autocomplete="off" placeholder="Search perfumes, brands, news..." class="super-search aa-input" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
+                    -->
+                </div>
+            </div>
+        
+        </div>
+
+</section>
+
+<section>
+    <div class="inner">
+        <div class="skill-container">
+            <div class="skill">
+                <i class="fab fa-searchengin skill-icon"></i>
+                <div class="skill-title">
+                    <div class="skill-name">SEARCH</div>
+                    <div class="skill-message">향수 노트 찾기</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-award skill-icon"></i>
+                <div class="skill-title">
+                    <div class="skill-name">Ranking</div>
+                    <div class="skill-message">향수 인기 순위</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-users skill-icon"></i>
+                <div class="skill-title">
+                    <div class="skill-name">Community</div>
+                    <div class="skill-message">커뮤니티</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-font-awesome-flag skill-icon"></i>
+                <div class="skill-title">
+                    <div class="skill-name">Brands</div>
+                    <div class="skill-message">향수 브랜드</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="inner">
+        <div class="roadmap-container">
+            <div class="roadmap-title-container">
+                <div class="roadmap-title">Best</div>
+                <div class="aroow-container">
+                    <i class="fas fa-arrow-left arrow-left"></i>
+                    <i class="fas fa-arrow-right arrow-right"></i>
+                </div>
+            </div>
+            <ul class="class-list">
+                <li class="class-card">
+                    <img src="https://fimgs.net/mdimg/perfume/375x500.62199.jpg" alt="BYREDO" class="class-image-recommend">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Tom Ford</div>
+                            <div class="class-format">165$</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">Black Orchid Parfum</div>
+                            <div class="class-detail">Unisex</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://fimgs.net/mdimg/perfume/375x500.67789.jpg" alt="BYREDO" class="class-image-recommend">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Maison Martin Margiela</div>
+                            <div class="class-format">140$</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">Autumn Vibes</div>
+                            <div class="class-detail">Unisex</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://fimgs.net/mdimg/perfume/375x500.63031.jpg" alt="BYREDO" class="class-image-recommend">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Byredo</div>
+                            <div class="class-format">300$</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">Tobacco Mandarin</div>
+                            <div class="class-detail">For Man</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://fimgs.net/mdimg/perfume/375x500.65738.jpg" alt="BYREDO" class="class-image-recommend">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Diptyque</div>
+                            <div class="class-format">165$</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">Orphéon Eau de Parfum</div>
+                            <div class="class-detail">Unisex</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://fimgs.net/mdimg/perfume/375x500.68716.jpg" alt="BYREDO" class="class-image-recommend">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Tom Ford</div>
+                            <div class="class-format">170$</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">Ombre Leather Parfum</div>
+                            <div class="class-detail">Unisex</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+<section>
+    <div class="inner">
+        <div class="roadmap-container">
+            <div class="roadmap-title-container">
+                <div class="roadmap-title">BYREDO <span class="roadmap-desc">(스웨덴에서 온 트랜디한 향수)</span></div>
+                <div class="aroow-container">
+                    <i class="fas fa-arrow-left arrow-left"></i>
+                    <i class="fas fa-arrow-right arrow-right"></i>
+                </div>
+            </div>
+            <ul class="class-list">
+                <li class="class-card">
+                    <a href="https://www.byredo.com/eu_en/bal-dafrique-eau-de-parfum-50ml" target="_blank">
+                    <img src="img/baldafrique.webp" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Bal d'Afrique</div>
+                            <div class="class-format">140 €</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </a>
+                </li>
+                <li class="class-card">
+                    <img src="img/blanche.webp" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Blanche</div>
+                            <div class="class-format">140 €</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="img/gypsywater.webp" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Gypsy Water</div>
+                            <div class="class-format">140 €</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="img/mojaveghost.webp" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">Mojave Ghost</div>
+                            <div class="class-format">140 €</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="img/roseofnoman.webp" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://www.dfs.com/medias/BYREDO-Brand-Logo-Bottom-en-en-340x340.jpg?context=bWFzdGVyfEJSQU5EX01FRElBfDc1ODV8aW1hZ2UvanBlZ3wvbWVkaWEvaW1hZ2UvYnJhbmQvaDlhL2hlNS84OTIwMDE1NjAxNjk0LmpwZ3w0ZjY0Y2VkNTBjMGQ0YmI1MjY3ZTNmODk3NDJmOGExMWUxZTQyOTIyOGJlNTM1Y2E3ZjViZmJhYzk2M2Y5ZDMx" alt="BYREDO" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">이거슨 제목</div>
+                            <div class="class-format">이거슨?!</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title"> 이곳은 메인 설명</div>
+                            <div class="class-detail">이곳은 보조 설명</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="inner">
+        <div class="footer-message">훗날 멋있는 사이트를 만들 수 있기를</div>
+        <div class="footer-contact">dannysir@naver.com</div>
+        <div class="footer-copyright">Copyright 2022 © All rights reserved.</div>
+    </div>˚
+</footer>
+</body>
+</html>

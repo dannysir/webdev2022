@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    color: #D1BF91;
+    font-family: "Spoqa Han Sans Neo", "Sans-serif";
+    background-color: #C7C8C4;
+  }
+
+  .inner{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 5px 2rem;
+      overflow: hidden;
+  }
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #60371E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.head-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-container .head-title{
+    font: bold;
+    font-size: 1.2rem;
+}
+.head-container .head-recommend{
+    font: bold;
+    font-size: 1.2rem;
+}
+a{
+    all: unset;
+}
+a.link{
+    text-decoration: none;
+    color: #D1BF91;
+}
+a.visited{
+    text-decoration: none;
+    color: #D1BF91;
+}
+a.active{
+    text-decoration: none;
+    color: #D1BF91;
+}
+a.hover{
+    text-decoration: none;
+    color: #D1BF91;
+}
+
+section{
+    width: 100%;
+ 
+    position: relative;
+}
+
+.main{
+    height: 525px;
+    background-image: url("https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3432&q=80");
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    /*background-color: #A6341B;*/
+    opacity: 0.8;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.title-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title-message{
+    font-weight: bold;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 0.8rem;
+
+}
+.message{
+    font-size: 2rem;
+    color: #fff;
+    line-height: 2rem;
+}
+.skill-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+.skill{
+    width: 20%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    padding: 0.5rem 0.5rem;
+    margin: 0rem 1rem;
+    box-shadow: 8px 8px 10px 3px rgba(24, 12, 2, 0.2);
+    transition: 0.4s;
+}
+.skill:hover{ /* skill에 마우스를 올렸을 때 올라오는 이펙트*/
+    transform: translate(0, -5px);
+    box-shadow: 8px 8px 10px 10px rgba(24, 12, 2, 0.2);
+
+}
+.skill-icon{
+    font-size: 2.5rem;
+    margin: 0 7px;
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.skill-name{
+    font-weight: bold;
+    color: rgb(46, 44, 44);
+    margin-bottom: 0.2rem;
+}
+.skill-message{
+    font-size: 0.8rem;
+    color: rgb(46, 44, 44);
+}
+.fa-thumbs-up{
+    
+}
+.roadmap-container{
+    width: 100%;
+}
+.roadmap-title-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.roadmap-title{
+    font-size: 1.4rem;
+    color: #60371E;
+    font-weight: bold;
+}
+.arrow-left{
+    font-size: 2rem;
+    color: #60371E;
+    cursor: pointer;
+}
+.arrow-right{
+    font-size: 2rem;
+    color: #60371E;
+    cursor: pointer;
+}
+.class-list{
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    overflow: hidden;
+}
+.class-card{
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 8px 8px 10px 3px rgba(24, 12, 2, 0.2);
+    border-radius: 8px;
+    transition: 0.4s;
+    /* 여기서 flex-shrink 를 사용해서 줄였을 때 안깨지게 할 수 있다.*/
+}
+.class-card:hover{
+    transform: translate(0, -5px);
+    box-shadow: 8px 8px 10px 9px rgba(24, 12, 2, 0.2);
+
+}
+.class-image{
+    width: 200px;
+    border-radius: 8px 8px 0 0;
+    height: 150px;
+    /* width를 max-width로 바꾸고 height 를 없애면 이미지도 안깨짐*/
+
+}
+.class-image-recommend{
+    width: 200px;
+    border-radius: 8px 8px 0 0;
+    height: 160px;
+    /* width를 max-width로 바꾸고 height 를 없애면 이미지도 안깨짐*/
+
+}
+.class-container{
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+.class-skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.class-type{
+    font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+}
+.class-format{
+    font-size: 0.9rem;
+    color: black;
+    /* background-color: #D1BF91; 문자라인에 형광팬 표시를 해주는*/
+    padding: 00.2rem;
+}
+.class-desc{
+    width: 100%;
+    margin-top: 0.2rem;
+}
+.class-title{
+    font-weight: bold;
+    color: rgb(124, 103, 103);
+    /* 글자가 많을 때 ...으로 생략해서 표현*/
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5rem;
+}
+.class-detail{
+    color: rgb(124, 103, 103);
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+.roadmap-desc{
+    display: visible;
+}
+
+li a:hover{
+    cursor: pointer;
+}
+div a:hover{
+    cursor:pointer;
+}
+footer{
+    border-top: 1px solid #73462C;
+    background-color: #60371E;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.footer-message{
+    font-weight: bold;
+    margin: 0.4rem 0.5rem;
+}
+.footer-contact{
+    margin: 0 0.5rem;
+}
+.footer-copyright{
+    margin: 1rem 0.5rem;
+    font-size: 0.8rem;
+}
+  @media only screen and (min-width: 1200px){
+    .inner{
+    max-width: 1200px;
+    }
+  }
+  @media only screen and (max-width: 900px){
+    .skill-container{
+        display: none;    
+}
+.roadmap-desc{
+    display: none;
+}
+  }
