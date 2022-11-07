@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const root = document.getElementById("root");
+        const span = React.createElement("span", null, "Hello, San");
+
+        const btn = React.createElement("button", {
+            onClick: () => console.log("Click!"),
+        }, "button");
+
+        const Title = () => (
+            <span
+            onMouseEnter = {() => console.log("Enter")}
+            >
+            Hello,San
+            </span>
+        );
+        const Button = ()=> (
+            <button 
+            onClick = {() => console.log("SanE")}
+            onMouseEnter = {() => console.log("enter")}
+            >
+            Click Me
+            </button>
+        );
+        const Container =()=> (
+            <div>
+                <Title />
+                <Button />    
+            </div>
+        );
+        ReactDOM.render(<Container/>, root);
+    </script>
+</html>
