@@ -15,16 +15,18 @@
             const minChange = (event) => {
                 setMinute(event.target.value)
             };
+            const reset = () => setMinute(0);
             return(
                 <div>
                     <h1 callName = "title">Super Converter</h1>
                     <label htmlFor="minutes">Minutes</label>
-                    <input values = {minute} onChange = {minChange} id="minutes" placeholder="minutes" type ="number"/>
-                    <h3>you want to change {minute}</h3>
+                    <input value = {minute} onChange = {minChange} id="minutes" placeholder="minutes" type ="number"/>
+
                     <label htmlFor="hours">Hours</label>
-                    <input id ="hours" placeholder="hours" type ="number"/>
- 
+                    <input value = {Math.round(minute/60)} id ="hours" placeholder="hours" type ="number" disabled/>
+                    <button onClick = {reset}>reset</button>
                 </div>
+                
             );
         }
 
