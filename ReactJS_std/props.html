@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- root 부터 React가 추가 가능 -->
+    <div id="root"></div>
+  </body>
+  <script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"
+  ></script>
+  <!-- babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- prop의 type을 설정하게 해주는-->
+  <script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+  <script type="text/babel">
+    const root = document.getElementById('root');
+    function Btn({ innerText, size, onClick }) {
+      return (
+        <button
+          onClick={onClick}
+          style={{
+            backgroundColor: 'tomato',
+            color: 'white',
+            padding: '10px 20px',
+            border: 0,
+            borderRadius: 10,
+            fontSize: size ? 18 : 10,
+          }}
+        >
+          {innerText}
+        </button>
+      );
+    }
+
+    //State를 사용해서 바뀐 부분만 새로 로드하게 해주는
+    const MemorizeBtn = React.memo(Btn);
+
+    //다음 방법을 통해서 prop의 type(자료형)을 지정해줄 수 있다. 그런데 memo와 같이 쓰면 안됨
+    //
+    // Btn.propTypes = {
+    //   innerText: PropTypes.string,
+    //   size: PropTypes.number,
+    //   onClick: PropTypes.string.isRequired 를 사용해서 반드시 필요한 요소를 지정 가능
+    // };
+    //MemorizeBtn.propTypes = {}를 사용하면 가능하긴함
+
+    function App() {
+      const [value, setValue] = React.useState('Save');
+      const ChangeValue = () => setValue('changed');
+      return (
+        <div>
+          <MemorizeBtn innerText={value} size={true} onClick={ChangeValue} />
+          <MemorizeBtn innerText="reset" size={false} />
+        </div>
+      );
+    }
+
+    // ReactDom을 사용하여 화면에 랜더링 (랜더링하려는 함수, 랜더링을 시작할 위치)
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
