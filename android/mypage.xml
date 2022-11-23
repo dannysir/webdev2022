@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/mypage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mypage_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+                <Button
+                    android:id="@+id/mypage_menubutton_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/ic_menu_back"
+                    android:gravity="center_horizontal">
+
+                </Button>
+
+            <TextView
+                android:id="@+id/mypage_maintitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:letterSpacing="-0.03"
+                android:lineSpacingExtra="10sp"
+                android:textAlignment="center"
+                android:textColor="#222222"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mypage_menubutton_btn"
+                android:layout_alignBaseline="@+id/mypage_menubutton_btn"
+                tools:text="마이페이지" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mypage_upper_layout"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mypage_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/mypage_black"
+                app:civ_border_overlay="true"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:id="@+id/mypage_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="150dp"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="서산" />
+
+            <TextView
+                android:id="@+id/mypage_subname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="150dp"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="대학생" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mypage_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/round_shape_gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mypage_bottom_fist_layout"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mypage_likenum_layout"
+                    android:layout_width="40dp"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mypage_likenum_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:text="44" />
+
+                    <TextView
+                        android:id="@+id/mypage_likenum_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Like" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mypage_flwnum_layout"
+                    android:layout_width="66dp"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mypage_flwnum_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:text="44" />
+
+                    <TextView
+                        android:id="@+id/mypage_flwnum_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Followers" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mypage_explain_text"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="30dp"
+                tools:text="mypage_explane_example" />
+
+            <Button
+                android:id="@+id/mypage_logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/round_shape_purple"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="로그아웃" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

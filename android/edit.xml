@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/edit_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <Button
+                android:id="@+id/edit_menubutton_btn"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/ic_menu_back"
+                android:gravity="center_horizontal">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/edit_maintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:letterSpacing="-0.03"
+                android:lineSpacingExtra="10sp"
+                android:textAlignment="center"
+                android:textColor="#222222"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_menubutton_btn"
+                android:layout_alignBaseline="@+id/edit_menubutton_btn"
+                tools:text="Edit" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_screen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/edit_subtitle_text"
+            android:layout_width="46dp"
+            android:layout_height="26dp"
+            android:text="New"
+            android:textSize="18sp"
+            android:lineSpacingExtra="12sp"
+            android:textColor="@color/mypage_black"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="28dp"/>
+        <LinearLayout
+            android:id="@+id/edit_window_layout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/round_shape_purple"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edit_setTitle_editText"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="58dp"
+                android:background="@drawable/round_shape_gray"/>
+            <RelativeLayout
+                android:id="@+id/edit_setTime_layout"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp">
+                <EditText
+                    android:id="@+id/edit_startTime_editText"
+                    android:layout_width="126dp"
+                    android:layout_height="126dp"
+                    android:background="@drawable/round_shape_gray"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:text="10:00"/>
+                <EditText
+                    android:id="@+id/edit_endTime_editText"
+                    android:layout_width="126dp"
+                    android:layout_height="126dp"
+                    android:background="@drawable/round_shape_gray"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:text="10:00"
+                    android:layout_alignParentRight = "true"
+                    />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/edit_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/round_shape_green"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="12sp"
+                android:text="저장"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
