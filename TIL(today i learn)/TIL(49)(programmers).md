@@ -1,3 +1,10 @@
+---
+title: Programmers 코딩테스트 (11)
+tags: [Programmers, Coding Test]
+style: fill
+color: light
+description: programmers - 약수의 갯수 덧샘 - 문제 풀이
+---
 # 2022-12-13 TIL
 
 ## programmers
