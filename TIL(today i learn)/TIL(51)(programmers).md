@@ -1,3 +1,10 @@
+---
+title: Programmers 코딩테스트 (13)
+tags: [Programmers, Coding Test]
+style: fill
+color: light
+description: programmers - 폰켓몬 - 문제 풀이
+---
 # 2022-12-15 TIL
 
 ## programmers
